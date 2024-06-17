@@ -1,0 +1,445 @@
+*{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+body{
+  background-color: #e4e5e7;
+}
+
+.attribution div {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.transparency{
+  opacity: 0.5;
+}
+
+#sectionAll{
+  margin: 16px 0px;
+}
+
+.section{
+  width: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 16px 16px 0px 16px;
+  padding: 16px;
+}
+
+.reply{
+  margin-left: 32px;
+}
+
+/* section header */
+.header{
+  width: 243px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.header .img{
+  width: 32px;
+  height: 32px;
+}
+
+.header .name{
+  margin: 7px 16px;
+  width: 87px;
+  height: 19px;
+  vertical-align:baseline;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  text-align: left;
+  color: #334253; 
+}
+
+.header .date{
+  width: 90px;
+  padding: 4px 0px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #67727E;
+}
+
+.header .you {
+  width: 36px;
+  height: 19px;
+  margin: 7px 16px 7px 0;  
+}
+
+.you p {
+  width: 24px;
+  height: 15px; 
+  text-align: center;
+  vertical-align: baseline;
+  font-family: Rubik;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.41px;
+  background-color: #5357B6;
+  color: white;
+}
+
+/* section main */
+.main{
+  margin: 16px 0px;
+}
+
+.main .comment{
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #67727E;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main .mention{
+  color: blue;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* section footer score*/
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .score{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background-color: #F5F6FA;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score .plus{
+  width: 10.07px;
+  height: 10px;  
+  padding-left: 16px;
+}
+
+.score .textScore{
+  width: 30px;
+  height: 19px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  text-align: center;
+  color: #5357B6;
+}
+
+.score .minus{
+  padding-right: 16px;
+}
+
+/* section footer reply*/
+.footer .rep{
+  width: 66px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .repIcon{
+  width: 14px;
+  height: 12.25px;
+}
+
+.footer .repbutton {
+  border: none;
+  background-color: white;
+  width: 44px;
+  height: 24px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #5357B6;  
+}
+
+/* section footer button*/
+.footer .delButton , .footer .editButton{
+  border: none;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .delButton{
+  width: 63px;
+  height: 19px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ED6368;
+  margin-right: 16px; 
+  margin-left:auto 
+}
+
+.footer .editButton{
+  width: 54px;
+  height: 19px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5357B6;  
+}
+
+/* reply comment */
+.formReply{
+  padding: 16px 16px 13px 16px;
+  border-radius: 10px;
+  width: 100%;
+  height: 189px;
+  background-color: white;
+  position: relative;
+}
+
+/* send comment */
+.formSend{
+  margin: 16px 16px 32px 16px;
+  padding: 16px 16px 13px 16px;
+  border-radius: 10px;
+  width: auto;
+  height: 189px;
+  background-color: white;
+  position: relative;
+}
+
+.formSend .addComment , .formReply .addComment{
+  width: 93%;
+  height: 55%;
+  border: 1px solid #c9cace;
+  border-radius: 10px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #4c535a;
+  padding: 10px 10px 10px 10px;
+}
+
+.imgForm{
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  margin: 20px 0px;
+  position: absolute;
+}
+
+.formSend .submitName , .formReply .submitName {
+  width: 104px;
+  height: 48px;
+  background-color: #5357B6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-right: auto;
+  position: absolute;
+  right: 16px;
+  top : 155px;  
+}
+
+/* dialog modal */
+.dialogParent{
+  Width: 100vw;
+  Height: 100vh;
+  background-color:rgb(120, 120, 120 , 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.deleteDialog{
+  Width: 300px;
+  Height: 224px;
+  margin: 16px;
+  padding: 24px 28px; 
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #aaa;
+}
+
+.dialogHeader{
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.7px;
+  text-align: left;  
+  color: #334253;
+}
+
+.dialogMain{
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 16px 0px;
+  color: #67727E;
+}
+
+.dialogFooter{
+  display: flex;
+  justify-content: space-between;
+}
+.dialogNo , .dialogYes{
+  Width: 138px;
+  Height: 48px;
+  border: none;
+  color: white;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 10px;  
+}
+
+.dialogNo{
+  background-color: #67727E;
+  margin-right: 6px;
+}
+
+.dialogYes{
+  background-color: #ED6368;
+  margin-left: 6px;
+}
+
+.update{
+  width: 104px;
+  height: 48px;
+  background-color: #5357B6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px){
+
+  .section{
+    position: relative;
+  }
+
+  .reply{
+    margin-left: 88px;
+  }
+
+  .header{
+    margin-left: 80px;
+    margin-top: 12px;
+  }
+
+  .main{
+    margin-left: 80px;
+  }
+
+  .footer .score{
+    width: 40px !important;
+    height: 100px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top : 24px;
+    left: 24px;
+  }
+
+  .score .plus{
+    padding-left: 0;
+  }
+
+  .score .minus{
+    padding-right: 0;
+  }
+
+  .rep{
+    position: absolute;
+    right: 24px;
+    top: 28px;
+  }
+
+  .footer .editButton{
+    position: absolute;
+    right: 25px;
+    top: 29px;
+  }
+
+  .footer .delButton {
+    position: absolute;
+    right: 90px;
+    top: 30px;
+  }
+
+  .formSend , .formReply{
+    position: relative;
+    height: 144px;
+  }
+
+  .imgForm{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 24px;
+    position: absolute;
+  }
+
+  .formSend .addComment{
+    width: calc(100% - (240px));
+    top: 24px;
+    left: 80px;
+    position: absolute;
+  }
+
+  .formReply .addComment{
+    width: calc(100% - (250px));
+    top: 24px;
+    left: 80px;
+    position: absolute;
+  }
+
+  .formSend .submitName , .formReply .submitName{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  
+}
+
+
+
+
+
